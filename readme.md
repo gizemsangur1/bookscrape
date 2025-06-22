@@ -33,7 +33,7 @@ By working with live scraped data, this project bridges the gap between raw web 
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/book_price_project.git
+git clone https://github.com/gizemsangur1/bookscrape.git
 cd book_price_project
 
 ```
