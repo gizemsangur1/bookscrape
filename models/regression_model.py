@@ -24,7 +24,6 @@ def train_and_evaluate_regression(input_csv_path: str):
     print(f"Mean Squared Error (MSE): {mse:.4f}")
     print(f"R² Skoru: {r2:.4f}")
 
-    # Burada sample'ı DataFrame olarak verdik, kolon isimleriyle
     sample = pd.DataFrame([[5, 1]], columns=["rating", "in_stock"])
     predicted_price = model.predict(sample)[0]
     print(f"Örnek Tahmini Fiyat (rating=5, in_stock=1): £{predicted_price:.2f}")
