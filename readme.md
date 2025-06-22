@@ -1,6 +1,6 @@
 # Book Price Scraping & Machine Learning Project
 
-Unlock the power of real-world data scraping and predictive modeling with this end-to-end project that combines web scraping, data preprocessing, and machine learning — all focused on predicting book prices!
+This is a hands-on project where I built a complete pipeline to collect real data by scraping book information from a website, clean and prepare that data, and then create machine learning models to predict book prices. It helped me practice web scraping, data preprocessing, and regression modeling — all with a practical, end-to-end approach.
 
 ---
 
