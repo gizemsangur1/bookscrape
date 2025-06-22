@@ -2,7 +2,6 @@ import pandas as pd
 import os
 
 def load_and_clean_data(input_path: str) -> pd.DataFrame:
-    """CSV dosyasını yükler ve temizler."""
     df = pd.read_csv(input_path)
 
     df.dropna(inplace=True)
@@ -23,8 +22,10 @@ def load_and_clean_data(input_path: str) -> pd.DataFrame:
 if __name__ == "__main__":
     BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
     input_file = os.path.join(BASE_DIR, "data", "books_selenium.csv")
-
     df_clean = load_and_clean_data(input_file)
 
-    print("Temizlenmiş veri:")
+    clean_path = os.path.join(BASE_DIR, "data", "books_clean.csv")
+    df_clean.to_csv(clean_path, index=False)
+
+    print("Temizlenmiş veri kaydedildi:", clean_path)
     print(df_clean.head())
