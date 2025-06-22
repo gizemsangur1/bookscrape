@@ -57,7 +57,7 @@ def scrape_books_selenium(page_limit=5):
     return pd.DataFrame(data)
 
 if __name__ == "__main__":
-    df = scrape_books_selenium(page_limit=10)
+    df = scrape_books_selenium(page_limit=30)
     BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
     data_dir = os.path.join(BASE_DIR, "data")
     os.makedirs(data_dir, exist_ok=True)
